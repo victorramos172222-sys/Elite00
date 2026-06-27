@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoX Play - O Melhor do Entretenimento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+        
+        * {
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        body {
+            background-color: #050505;
+            color: #fff;
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14;
+        }
+
+        .border-neon {
+            border: 1px solid #39FF14;
+        }
+
+        .btn-neon {
+            background: linear-gradient(45deg, #1a1a1a, #111);
+            border: 1px solid #39FF14;
+            transition: all 0.3s ease;
+        }
+
+        .btn-neon:hover {
+            background-color: #39FF14;
+            color: #000;
+            box-shadow: 0 0 15px #39FF14;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER -->
+    <header class="bg-black py-4 px-6 border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold text-[#39FF14]">NEOX PLAY</h1>
+            <div class="hidden md:flex gap-6 text-gray-300">
+                <a href="#planos" class="hover:text-[#39FF14] transition">Planos</a>
+                <a href="#beneficios" class="hover:text-[#39FF14] transition">Benefícios</a>
+                <a href="#contato" class="hover:text-[#39FF14] transition">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="py-16 px-6 text-center bg-gradient-to-b from-green-900/20 to-transparent">
+        <h2 class="text-5xl md:text-7xl font-bold mb-4">
+            O MELHOR DA <span class="text-[#39FF14]">TV</span> ESTÁ AQUI
+        </h2>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+            Mais de 31.000 conteúdos, qualidade 4K e estabilidade garantida. Assista em qualquer lugar!
+        </p>
+        <a href="#planos" class="inline-block px-8 py-3 rounded-full text-xl font-bold btn-neon">
+            VER PLANOS <i class="fas fa-arrow-down ml-2"></i>
+        </a>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="max-w-7xl mx-auto py-12 px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-gray-900/50 rounded-xl">
+                <i class="fas fa-tv text-4xl text-[#39FF14] mb-3"></i>
+                <h3 class="font-bold">Canais Abertos e Fechados</h3>
+            </div>
+            <div class="p-4 bg-gray-900/50 rounded-xl">
+                <i class="fas fa-futbol text-4xl text-[#39FF14] mb-3"></i>
+                <h3 class="font-bold">Futebol Ao Vivo</h3>
+            </div>
+            <div class="p-4 bg-gray-900/50 rounded-xl">
+                <i class="fas fa-film text-4xl text-[#39FF14] mb-3"></i>
+                <h3 class="font-bold">Filmes e Séries</h3>
+            </div>
+            <div class="p-4 bg-gray-900/50 rounded-xl">
+                <i class="fas fa-mobile-alt text-4xl text-[#39FF14] mb-3"></i>
+                <h3 class="font-bold">Multi Dispositivos</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS E PRECOS -->
+    <section id="planos" class="py-16 px-6 bg-black/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">ESCOLHA O SEU <span class="text-[#39FF14]">PLANO</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- PLANO BASICO -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-[#39FF14] transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-gray-300 mb-2">BÁSICO</h3>
+                    <div class="text-5xl font-bold text-[#39FF14] mb-4">R$ 35,00</div>
+                    <ul class="space-y-3 mb-8 text-left">
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Pacote Completo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Canais Abertos</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Canais Fechados</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> +31.000 Conteúdos</li>
+                    </ul>
+                    <a href="https://wa.me/5581993898274" target="_blank" class="w-full py-3 rounded-lg font-bold text-center block btn-neon">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+
+                <!-- PLANO MENSAL -->
+                <div class="bg-gray-900 p-8 rounded-2xl border-2 border-[#39FF14] neon-glow relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#39FF14] text-black px-4 py-1 rounded-full text-sm font-bold">MAIS POPULAR</span>
+                    <h3 class="text-2xl font-bold text-white mb-2">MENSAL</h3>
+                    <div class="text-5xl font-bold text-[#39FF14] mb-4">R$ 75,00</div>
+                    <ul class="space-y-3 mb-8 text-left">
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Tudo do Plano Básico</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Qualidade HD e Full HD</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Lançamentos de Filmes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Estabilidade Total</li>
+                    </ul>
+                    <a href="https://wa.me/5581993898274" target="_blank" class="w-full py-3 rounded-lg font-bold text-center block btn-neon">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+
+                <!-- PLANO ANUAL -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-[#39FF14] transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-gray-300 mb-2">ANUAL</h3>
+                    <div class="text-5xl font-bold text-[#39FF14] mb-4">R$ 175,00</div>
+                    <ul class="space-y-3 mb-8 text-left">
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Acesso Liberado Total</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Qualidade 4K</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Melhor Custo Benefício</li>
+                        <li class="flex items-center"><i class="fas fa-check text-[#39FF14] mr-2"></i> Suporte Prioritário</li>
+                    </ul>
+                    <a href="https://wa.me/5581993898274" target="_blank" class="w-full py-3 rounded-lg font-bold text-center block btn-neon">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPE -->
+    <footer id="contato" class="bg-black py-8 px-6 text-center border-t border-gray-800">
+        <h2 class="text-3xl font-bold mb-4">GARANTA JÁ O SEU!</h2>
+        <p class="text-xl mb-4">📞 WHATSAPP: (81) 9 9389-8274</p>
+        <p class="text-gray-500">Site: Eliteplay.com | Assinante P2P</p>
+        <div class="mt-4 text-[#39FF14]">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
